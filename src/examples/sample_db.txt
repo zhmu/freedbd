@@ -1,0 +1,26 @@
+#
+# example for a text-based disc database. content is identical to the
+# xml file, only the notation is text here. all albums here are utter
+# nonsense and for information purposes only... :)
+#
+[1234abcd]
+artist=Garage Band
+album=Take out the trash
+year=1492
+special=Limited Edition
+1=Intro
+2=The garbage returns
+3=NoisE
+4=Inspiration expired
+5=Outro
+6=The garbage returns (Remix) (Bonus track)
+
+[abcd1234]
+artist=Various
+album=Rock Hard Volume 42
+1=Thunderrock / Stone hard
+2=Blind Revenge / Guardian of the North
+3=Whattheheckatonia / The White Sessions
+4=Steel Maiden / Fear of the Dork
+5=Alwaysless / Alive Heart in an Alive World
+6=Boiling Earth / Gates

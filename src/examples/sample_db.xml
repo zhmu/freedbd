@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discs>
+ <!--
+    example for a text-based disc database. content is identical to the
+    xml file, only the notation is text here. all albums here are utter
+    nonsense and for information purposes only... :)
+   -->
+ <disc id="1234abcd" artist="Garbage Band" album="Take out the trash">
+  <year>1492</year>
+  <special>Limited Edition</special>
+  <track nr="1" title="Intro" />
+  <track nr="2" title="The garbage returns" />
+  <track nr="3" title="NoisE" />
+  <track nr="4" title="Inspiration expired" />
+  <track nr="5" title="Outro" />
+  <track nr="6" title="The garbage returns (Remix) (Bonus track)" />
+ </disc>
+ <disc id="abcd1234" artist="Various" album="Rock Hard Volume 42">
+  <track nr="1" title="Thunderrock / Stone hard" />
+  <track nr="2" title="Blind Revenge / Guardian of the North" />
+  <track nr="3" title="Whattheheckatonia / The White Sessions" />
+  <track nr="4" title="Steel Maiden / Fear of the Dork" />
+  <track nr="5" title="Alwaysless / Alive Heart in an Alive World" />
+  <track nr="6" title="Boiling Earth / Gates" />
+ </disc>
+</discs>

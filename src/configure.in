@@ -1,0 +1,24 @@
+AC_INIT(src/freedbd.c)
+
+AM_CONFIG_HEADER(src/options.h)
+AM_INIT_AUTOMAKE(freedbd,0.1)
+AC_PROG_CC
+AC_SUBST(CC)
+
+AC_ARG_WITH(xml,
+[  --with-xml              xml parsing via libxml2)])
+
+if test "$with_xml" = "yes"; then
+	AC_DEFINE([WITH_XML], [], [Support for XML files])
+	AC_PATH_PROG(XML_CONFIG, xml2-config, no)
+	if test "$XML_CONFIG" = "no"; then
+		AC_MSG_ERROR([Cannot locate xml2-config. Did you forget to install libxml2 ?])
+	else
+		XML_INCLUDES=`$XML_CONFIG --cflags`
+		XML_LIBS=`$XML_CONFIG --libs`
+		AC_SUBST(XML_INCLUDES)
+		LIBS="$LIBS $XML_LIBS"
+	fi
+fi
+
+AC_OUTPUT(Makefile src/Makefile examples/Makefile tools/Makefile)

@@ -1,0 +1,20 @@
+FreeDBd is a daemon which understand the FreeDB protocol and will return
+disc information based on queries it recieves.
+
+It is somehow different from the main freedb.org server, as:
+
+- It is very lightweight, designed for personal use only
+- Disc specified in text or XML source files
+
+It is written in C and requires libxml2 for XML support (which is optional),
+can be enabled by running configure with --with-xml.
+
+I wrote this because my internet connection at home is broken, and I can't
+stand seeing CD's being identified as 'Unknown Artist / Unknown Album',
+Unknown Track $n :-)
+
+You can find sample databases in the examples/ directory. Some Perl-based
+tools are in the tools/ directory.
+
+The code should be very understandable and provide good pointers at how to do
+network communication, auto{conf,make} projects and libxml2 support.
